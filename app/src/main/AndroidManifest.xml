@@ -12,11 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SeoulCoronaMap"
         android:usesCleartextTraffic="true">
+        <activity android:name=".LoginActivity"></activity>
         <activity
             android:name=".IntroActivity"
             android:theme="@style/IntroActivityTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
