@@ -15,8 +15,7 @@
     </style>
 
     <!-- 인트로 액티비티 제목줄 없는 테마   -->
-    <style name="IntroActivityTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="IntroActivityTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar"></style>
 
-    </style>
-
+    <style name="LoginActivityTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar"></style>
 </resources>

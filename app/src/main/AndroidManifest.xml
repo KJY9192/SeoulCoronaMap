@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SeoulCoronaMap"
         android:usesCleartextTraffic="true">
-        <activity android:name=".LoginActivity"></activity>
+        <activity android:name=".LoginActivity"
+            android:theme="@style/LoginActivityTheme"></activity>
         <activity
             android:name=".IntroActivity"
             android:theme="@style/IntroActivityTheme">
@@ -27,6 +28,18 @@
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <!-- Redirect URI: "kakao{NATIVE_APP_KEY}://oauth" -->
+                <data android:host="oauth"
+                    android:scheme="kakaocb007eb158199e2cf27899360b9419bc" />
             </intent-filter>
         </activity>
     </application>
